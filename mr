@@ -2575,7 +2575,7 @@ vcsh_trusted_checkout = vcsh clone $url $repo
 veracity_trusted_checkout = vv clone $url $repo
 
 
-list = true
+list = :
 config =
 bootstrap =
 
