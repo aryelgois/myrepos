@@ -1,4 +1,4 @@
-PREFIX:=/usr
+PREFIX?=/usr
 
 mans=mr.1 webcheckout.1
 
