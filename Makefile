@@ -30,5 +30,15 @@ install: build
 	install -m0644 lib/* ${DESTDIR}${PREFIX}/share/mr/
 	install -m0644 lib.sh/* ${DESTDIR}${PREFIX}/share/mr.sh/
 
+uninstall:
+	rm -f ${DESTDIR}${PREFIX}/bin/mr
+	rm -f ${DESTDIR}${PREFIX}/bin/webcheckout
+
+	rm -f ${DESTDIR}${PREFIX}/share/man/man1/mr.1
+	rm -f ${DESTDIR}${PREFIX}/share/man/man1/webcheckout.1
+
+	rm -rf ${DESTDIR}${PREFIX}/share/mr
+	rm -rf ${DESTDIR}${PREFIX}/share/mr.sh
+
 clean:
 	rm -f $(mans)
