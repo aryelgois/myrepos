@@ -2354,6 +2354,7 @@ git_fetch = git fetch --all --prune --tags "$@"
 git_svn_fetch = git svn fetch "$@"
 darcs_fetch = darcs fetch -a "$@"
 hg_fetch = hg pull "$@"
+vcsh_fetch = vcsh run "$MR_REPO" git fetch --all --prune --tags "$@"
 
 svn_clean =
 	if [ "x$1" = x-f ] ; then
